@@ -1,0 +1,22 @@
+<h3 style="margin-top: 10px;" class="text-info">List of appointments</h3>
+<hr>
+<table class="table" style="text-align: center;">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Date</th>
+        <th scope="col">Patient id</th>
+        <th scope="col">Pet Name</th>
+        <th scope="col">Owner Name</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let appointment of service.appointments; index as i">
+            <td>{{appointment.id}}</td>
+            <td>{{appointment.date}}</td>
+            <td>{{appointment.patient.id}}</td>
+            <td>{{appointment.patient.name}}</td>
+            <td>{{appointment.patient.ownerName}}</td>
+        </tr>
+    </tbody>
+  </table>

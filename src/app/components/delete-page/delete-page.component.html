@@ -1,0 +1,11 @@
+<h3 style="margin-top: 10px;" class="text-info">Delete patient</h3>
+<hr>
+<form [formGroup]="form" (ngSubmit)="submit()" class="form" style="margin-top: 10px;">
+    <div class="mb-3">
+        <label for="id" class="form-label">Id of patient to remove</label>
+        <input class="form-control" id="id" placeholder="Enter id" formControlName="id" type="number">
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Delete</button>
+    </div>
+</form>

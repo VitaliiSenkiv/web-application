@@ -1,0 +1,15 @@
+<h3 style="margin-top: 10px;" class="text-info">Shedule appointment</h3>
+<hr>
+<form [formGroup]="form" (ngSubmit)="submit()" class="form" style="margin-top: 10px;">
+    <div class="mb-3">
+        <label for="date" class="form-label">Date</label>
+        <input class="form-control" id="date" placeholder="Select date" formControlName="date" type="date">
+    </div>
+    <div class="mb-3">
+        <label for="patientId" class="form-label">Patient Id</label>
+        <input class="form-control" id="patientId" placeholder="Enter patient id" formControlName="patientId" type="number">
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Shedule</button>
+    </div>
+</form>

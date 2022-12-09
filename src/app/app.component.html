@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a routerLink="" class="navbar-brand">Vet-Clinic</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a routerLink="" class="nav-link">Patients</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/insert" class="nav-link">Add Patient</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/update" class="nav-link">Update Patient</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/delete" class="nav-link">Delete Patient</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/appointment" class="nav-link">Appointments</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/addAppointment" class="nav-link">Make Appointment</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/updateAppointment" class="nav-link">Update Appointment</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/deleteAppointment" class="nav-link">Delete Appointment</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet hidden>
+  </router-outlet>
+</div>

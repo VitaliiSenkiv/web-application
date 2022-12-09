@@ -1,0 +1,32 @@
+<h3 style="margin-top: 10px;" class="text-info">Update patient</h3>
+<hr>
+<form [formGroup]="form" (ngSubmit)="submit()" class="form" style="margin-top: 10px;">
+    <div class="mb-3">
+        <label for="id" class="form-label">Patient to update id</label>
+        <input class="form-control" id="id" placeholder="Enter patient id" formControlName="id" type="number">
+    </div>
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input class="form-control" id="name" placeholder="Enter name" formControlName="name" type="text">
+    </div>
+    <div class="mb-3">
+        <label for="petType" class="form-label">Type</label>
+        <input class="form-control" id="petType" placeholder="Enter pet type" formControlName="petType" type="text">
+    </div>
+    <div class="mb-3">
+        <label for="ownerName" class="form-label">Owner</label>
+        <input class="form-control" id="ownerName" placeholder="Enter owner name" formControlName="ownerName" type="text">
+    </div>
+
+    <div class="mb-3">
+        <label for="birthday" class="form-label">Birthday</label>
+        <input class="form-control" id="birthday" placeholder="Enter birthday" formControlName="birthday" type="date">
+    </div>
+    <div class="mb-3">
+        <label for="diagnos" class="form-label">Diagnos</label>
+        <input class="form-control" id="diagnos" placeholder="Enter diagnos" formControlName="diagnos" type="text">
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+</form>
